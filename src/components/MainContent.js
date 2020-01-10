@@ -14,6 +14,7 @@ const MainContent = ()=>{
             <p>Placeholder text here</p>
             <input type="checkbox" />
             <p>Placeholder text here</p>
+            <button>Make the World better</button>
 
 
         </div>
