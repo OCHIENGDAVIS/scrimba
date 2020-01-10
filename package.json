@@ -1,7 +1,7 @@
 {
   "name": "scrimba",
   "version": "0.1.0",
-  "homepage": "http:ochiengdavis.github.io\\scrimba",
+  "homepage": "http://ochiengdavis.github.io\\scrimba",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
