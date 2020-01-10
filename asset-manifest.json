@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/scrimba/static/css/main.f2287745.chunk.css",
-    "main.js": "/scrimba/static/js/main.51376a17.chunk.js",
-    "main.js.map": "/scrimba/static/js/main.51376a17.chunk.js.map",
+    "main.js": "/scrimba/static/js/main.f1c28653.chunk.js",
+    "main.js.map": "/scrimba/static/js/main.f1c28653.chunk.js.map",
     "runtime-main.js": "/scrimba/static/js/runtime-main.b6011c7a.js",
     "runtime-main.js.map": "/scrimba/static/js/runtime-main.b6011c7a.js.map",
     "static/js/2.860e1ad4.chunk.js": "/scrimba/static/js/2.860e1ad4.chunk.js",
     "static/js/2.860e1ad4.chunk.js.map": "/scrimba/static/js/2.860e1ad4.chunk.js.map",
     "index.html": "/scrimba/index.html",
-    "precache-manifest.db29a78d0fee7262049311bac9c5c5e8.js": "/scrimba/precache-manifest.db29a78d0fee7262049311bac9c5c5e8.js",
+    "precache-manifest.99885b3b1ab127c3b51ae4cad5b0b158.js": "/scrimba/precache-manifest.99885b3b1ab127c3b51ae4cad5b0b158.js",
     "service-worker.js": "/scrimba/service-worker.js",
     "static/css/main.f2287745.chunk.css.map": "/scrimba/static/css/main.f2287745.chunk.css.map",
     "static/js/2.860e1ad4.chunk.js.LICENSE": "/scrimba/static/js/2.860e1ad4.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b6011c7a.js",
     "static/js/2.860e1ad4.chunk.js",
     "static/css/main.f2287745.chunk.css",
-    "static/js/main.51376a17.chunk.js"
+    "static/js/main.f1c28653.chunk.js"
   ]
 }
