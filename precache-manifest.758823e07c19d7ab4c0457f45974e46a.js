@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "500e9352968e71d3d6e9e88aad26e8b4",
+    "revision": "eabfbe9c8c24c635b97d3b493efb1357",
     "url": "/scrimba/index.html"
   },
   {
-    "revision": "e7227dbaab48f257f4d2",
+    "revision": "4186b2a7bb29bb2d78e8",
     "url": "/scrimba/static/css/main.f2287745.chunk.css"
   },
   {
-    "revision": "7305c75d2d4c918d57a0",
-    "url": "/scrimba/static/js/2.860e1ad4.chunk.js"
+    "revision": "f77d55b84e4e180123f9",
+    "url": "/scrimba/static/js/2.2cb19bc6.chunk.js"
   },
   {
     "revision": "d705cb622423d72c5defbf368ca70dcc",
-    "url": "/scrimba/static/js/2.860e1ad4.chunk.js.LICENSE"
+    "url": "/scrimba/static/js/2.2cb19bc6.chunk.js.LICENSE"
   },
   {
-    "revision": "e7227dbaab48f257f4d2",
-    "url": "/scrimba/static/js/main.f1c28653.chunk.js"
+    "revision": "4186b2a7bb29bb2d78e8",
+    "url": "/scrimba/static/js/main.2a9ed33d.chunk.js"
   },
   {
     "revision": "f967733ddcc67b37b0cd",
