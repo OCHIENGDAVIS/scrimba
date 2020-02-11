@@ -1,17 +1,21 @@
 import React from 'react';
-import './App.css';
-import List from './components/List'
+import './App.css'
 import Header from './components/Header'
-import Footer from './components/Footer'
-import MainContent from './components/MainContent'
+import Options from './components/Options'
+import AddOptions from './components/AddOption'
+
+
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <MainContent />
-      <Footer />
+    <div>
+      <h1>Indecision App</h1>
+      <p>Put your life in the hands of a computer</p>
+      <Options />
+      <AddOptions />
+
     </div>
   );
 }
 
 export default App;
+
