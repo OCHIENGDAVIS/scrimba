@@ -4,9 +4,18 @@ import './App.css'
 
 
 function App() {
-  console.log('App is running...')
-  let temlate = <p>This is JSX from App.js</p>
-  return  temlate
+  let app = {
+    title : 'Indecision APp',
+    subtitle : 'Put your life in the hands of a computer'
+  }
+  let appExpresssion = (
+    <div>
+      <h1>{app.title}</h1> 
+      <p>Age : {app.subtitle}</p>
+    </div>
+  )
+    
+  return  appExpresssion
 }
 
 export default App;
