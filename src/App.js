@@ -1,20 +1,12 @@
 import React from 'react';
 import './App.css'
-import Header from './components/Header'
-import Options from './components/Options'
-import AddOptions from './components/AddOption'
+
 
 
 function App() {
-  return (
-    <div>
-      <h1>Indecision App</h1>
-      <p>Put your life in the hands of a computer</p>
-      <Options />
-      <AddOptions />
-
-    </div>
-  );
+  console.log('App is running...')
+  let temlate = <p>This is JSX from App.js</p>
+  return  temlate
 }
 
 export default App;
