@@ -7,15 +7,3 @@ body{
 .App {
   text-align: center;
 }
-#add-one{
-  font-size: 20px;
-}
-#remove-one{
-  font-size: 20px;
-}
-#reset{
-  font-size: 20px;
-}
-#count{
-  font-size: 50px;
-}
