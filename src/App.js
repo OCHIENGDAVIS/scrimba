@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css'
+console.log('What is happening here this also worked')
 
 
 
 function App() {
+  exploreEs6()
   let app = {
     
     subtitle : 'Put your life in the hands of a computer',
@@ -38,9 +40,17 @@ function App() {
       {false}
     </div>
   )
+  function exploreEs6(){
+      let name = "davis"
+      name = 'mike'
+      console.log(name)
+      const nameCost  = 'Frank'
+      console.log(nameCost)
+  }
     
   return  appExpresssion
 }
 
 export default App;
+
 
