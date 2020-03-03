@@ -4,76 +4,112 @@ import './App.css'
 
 
 function App() {
-  exploreEs6()
+  // exploreEs6()
+  console.log('Rerendering the app')
   let app = {
-    
+    title : 'Indecision App',
     subtitle : 'Put your life in the hands of a computer',
-    options : []
+    options : [],
+    count : 0,
+  }
+  const add = (e)=>{
+    console.log('Add one.....')
+    e.persist()
+    app.count ++
+    console.log(app.count)
+  }
+  const subtratc = (e)=>{
+
+    console.log('subtract......')
+    e.persist()
+    app.count --
+    console.log(app.count)
+    reRender()
+  }
+  const reset = (e)=>{
+    console.log('reset......')
+    e.persist()
+    app.count =0
+    console.log(app.count)
   }
   let appExpresssion = (
     <div>
      {app.title && <div><h1>{app.title}</h1><p>{app.subtitle}</p></div>}
-     {app.options.length >0 && <ul><li>one</li><li>two</li></ul>}
+     {app.options.length >0 ? <ul><li>one</li><li>two</li></ul> : <p>No options</p>}
+
+     <hr></hr>
+      <h1 className='counter'>Counter :  <span>{app.count}</span></h1>
+      <button className="btn" onClick={add}>+1</button>
+      <button className="btn" onClick={subtratc}>-1</button>  
+      <button className="btn" onClick={reset}>Reset</button>
     </div>
   )
-  let user = {
-    username : 'Davis',
-    age : 17,
+  // let user = {
+    // username : 'Davis',
+    // age : 17,
    
-  }
-  function getLocation(location){
-    if(location){
-      return true
-    }
-    else{
-      return false
-    }
+  // }
+  // function getLocation(location){
+  //   if(location){
+  //     return true
+  //   }
+  //   else{
+  //     return false
+  //   }
     
-  }
-  let userExpresssion = (
-    <div>
-      <h1>{user.username}</h1> 
-     { user.age > 18 ?  <p>Age : {user.age}</p> : undefined}
-      {/* <p>location : {getLocation()}</p> */}
-      {getLocation() ? <p>Location : {'Kenya'}</p>  : undefined}
-      {false}
-    </div>
-  )
-  function exploreEs6(){
-      let name = "davis"
-      name = 'mike'
-      console.log(name)
-      const nameCost  = 'Frank'
-      console.log(nameCost)
-  }
-  arrow()
-  console.log('Making the arrow funtion to work........')
-  console.log(getFirstName('Brian Ochieng'))
-  console.log(arrowFirnName('James Omollo'))
+  // }
+  // let userExpresssion = (
+  //   <div>
+  //     <h1>{user.username}</h1> 
+  //    { user.age > 18 ?  <p>Age : {user.age}</p> : undefined}
+  //     {/* <p>location : {getLocation()}</p> */}
+  //     {getLocation() ? <p>Location : {'Kenya'}</p>  : undefined}
+  //     {false}
+  //   </div>
+  // )
+  // function exploreEs6(){
+  //     let name = "davis"
+  //     name = 'mike'
+  //     console.log(name)
+  //     const nameCost  = 'Frank'
+  //     console.log(nameCost)
+  // }
+  // arrow()
+  // console.log('Making the arrow funtion to work........')
+  // console.log(getFirstName('Brian Ochieng'))
+  // console.log(arrowFirnName('James Omollo'))
+ 
     
   return  appExpresssion
+  
 }
 
-const arrow = ()=>{
-  const square = (x)=>{
-    // console.log(anotherFunction(3))
-    console.log(x*x)
-  }
+const reRender = ()=>{
+  App()
+}
+
+
+
+// const arrow = ()=>{
+//   const square = (x)=>{
+//     // console.log(anotherFunction(3))
+//     console.log(x*x)
+//   }
   // console.log('i am an arrow function')
   // square(23)
-}
-const anotherFunction = x=>x*2
+// }
+// const anotherFunction = x=>x*2
 
 // Challenge => Arrow functiona
 // getFirstName(Mike smith) return Mike
 // create a regular arroew functions 
 // create arrw function using the shorthand syntax 
 
-const getFirstName = (fullName)=>{
-  return fullName.split(' ')[0]
+// const getFirstName = (fullName)=>{
+//   return fullName.split(' ')[0]
 
-}
-const arrowFirnName = fullName=>fullName.split(' ')[0]
+// }
+// const arrowFirnName = fullName=>fullName.split(' ')[0]
 
 
 
@@ -81,32 +117,40 @@ const arrowFirnName = fullName=>fullName.split(' ')[0]
 
 // arguments object is nolonger bound
 
-console.log('More on the arrow functions')
-const add = (a, b)=>{
-  // console.log(arguments)
-  return a + b
-}
-console.log(add(5,2, 300, 400))
+// console.log('More on the arrow functions')
+// const add = (a, b)=>{
+//   // console.log(arguments)
+//   return a + b
+// }
+// console.log(add(5,2, 300, 400))
 
 
 
 // The this keyword is nolonger bound
-const user = {
-  name : 'davis',
-  cities : ['Nairobi', 'Mombasa', 'Kedu bay'],
-  printCities(){
-    console.log(this.name)
-    console.log(this.cities)
-    const cityMessage = this.cities.map  (city=>{
-      console.log(this.name + 'has lived in ' +city) 
-    })
-    console.log(cityMessage, 'City message is here')
-  }
+// const user = {
+//   name : 'davis',
+//   cities : ['Nairobi', 'Mombasa', 'Kedu bay'],
+//   printCities(){
+//     console.log(this.name)
+//     console.log(this.cities)
+//     const cityMessage = this.cities.map (city=>{
+//       console.log(this.name + 'has lived in ' +city) 
+//     })
+//     console.log(cityMessage, 'City message is here')
+//   }
 
 
-}
-user.printCities()
+// }
+// user.printCities()
 
+// const multiplier = {
+//   numbers : [1,2,3,4,5],
+//   multiply(multiplyBy){
+//     return this.numbers.map(number=>number*multiplyBy)
+//   }
+// }
+  
+// console.log(multiplier.multiply(20))
 export default App;
 
 
