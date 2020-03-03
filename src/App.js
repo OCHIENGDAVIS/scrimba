@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   // exploreEs6()
-  console.log('Rerendering the app')
+  // console.log('Rerendering the app')
   let app = {
     title : 'Indecision App',
     subtitle : 'Put your life in the hands of a computer',
@@ -181,6 +181,78 @@ function App() {
 // }
   
 // console.log(multiplier.multiply(20))
+
+
+class Person  {
+  constructor(name='Anonymous', age=0){
+    this.name = name
+    this.age = age
+
+  }
+  getGreeting(){
+    return `Hello there, ${this.name}`
+  }
+  getDescription(){
+    return `My name is ${this.name}, I am ${this.age} years old`
+  }
+  
+}
+class Student extends Person{
+  constructor(name, age, major){
+    super(name, age)
+    this.major = major
+
+  }
+  getDescription(){
+    console.log('making the constructor workd.......')
+    super.getDescription()
+    console.log('Done with the constructor.......')
+    return `Hi my name is ${this.name} anf I am ${this.age}  I take ${this.major}`
+  }
+  
+}
+
+class PhdStudent extends Student{
+  constructor(name, age, major, thesis){
+    super(name, age, major, 'poultry')
+    this.poultry = this.poultry
+  }
+}
+// const davis = new Person('davis Ochieng', 35)
+// console.log(davis)
+// davis.getGreeting()
+// console.log(davis.getDescription())
+
+// making another object
+
+// const other = new Person()
+// console.log(other)
+// other.getGreeting()
+// console.log(other.getDescription())
+
+// const stud = new Student('student', 34, 'computer Science')
+// console.log(stud.getDescription())
+// const phd = new PhdStudent('ben', 100, 'Software Eng', 'Algorithms')
+// console.log(phd.getDescription())
+// console.log(phd)
+
+class Traveller extends Person{
+  constructor(name, age, homeLocation){
+    super(name, age)
+    this.homeLocation = homeLocation
+  }
+  getGreeting(){
+    if(this.homeLocation){
+      return super.getGreeting() + ` I am visiting from  ${this.homeLocation}`
+    }
+    else{
+      return super.getGreeting()
+    }
+  }
+}
+const mike  = new Traveller('jesse', 20, 'uk')
+console.log(mike.getGreeting())
+
 export default App;
 
 
