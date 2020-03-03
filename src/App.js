@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css'
-console.log('What is happening here this also worked')
 
 
 
@@ -47,9 +46,66 @@ function App() {
       const nameCost  = 'Frank'
       console.log(nameCost)
   }
+  arrow()
+  console.log('Making the arrow funtion to work........')
+  console.log(getFirstName('Brian Ochieng'))
+  console.log(arrowFirnName('James Omollo'))
     
   return  appExpresssion
 }
+
+const arrow = ()=>{
+  const square = (x)=>{
+    // console.log(anotherFunction(3))
+    console.log(x*x)
+  }
+  // console.log('i am an arrow function')
+  // square(23)
+}
+const anotherFunction = x=>x*2
+
+// Challenge => Arrow functiona
+// getFirstName(Mike smith) return Mike
+// create a regular arroew functions 
+// create arrw function using the shorthand syntax 
+
+const getFirstName = (fullName)=>{
+  return fullName.split(' ')[0]
+
+}
+const arrowFirnName = fullName=>fullName.split(' ')[0]
+
+
+
+// More of the arrow functions and their difference
+
+// arguments object is nolonger bound
+
+console.log('More on the arrow functions')
+const add = (a, b)=>{
+  // console.log(arguments)
+  return a + b
+}
+console.log(add(5,2, 300, 400))
+
+
+
+// The this keyword is nolonger bound
+const user = {
+  name : 'davis',
+  cities : ['Nairobi', 'Mombasa', 'Kedu bay'],
+  printCities(){
+    console.log(this.name)
+    console.log(this.cities)
+    const cityMessage = this.cities.map  (city=>{
+      console.log(this.name + 'has lived in ' +city) 
+    })
+    console.log(cityMessage, 'City message is here')
+  }
+
+
+}
+user.printCities()
 
 export default App;
 
