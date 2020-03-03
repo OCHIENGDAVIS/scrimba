@@ -43,7 +43,7 @@ function App() {
   }
   const removeAll = ()=>{
     console.log('Removing all the elements ......')
-    app.options = []
+    app.options = ['one']
     btnState()
   }
   const btnState = ()=>{
@@ -51,13 +51,21 @@ function App() {
     if(app.options.length <= 0){
       btnState = true
     }
-    console.log(btnState)
     return btnState
+  }
+  const handleMakeChoice = ()=>{
+    console.log('trying to make a choice')
+    const choiceIndex = Math.floor(Math.random() * app.options.length)
+    const choice = app.options[choiceIndex]
+    alert(choice)
   }
   let appExpresssion = (
     <div>
-     {app.title && <div><h1>{app.title}</h1><p>{app.subtitle}</p></div>}
-     {app.options.length >0 ? <ul><li>one</li><li>two</li></ul> : <p>No options</p>}
+     <h1>{app.title}</h1>
+    <p>{app.subtitle}</p>
+    {app.options.length > 0 ? <p>Here are your options </p> : <p>No options</p>}
+     {app.options.map ((option, key)=><li key={key}>{option}</li>)}
+    <button className='btn-small' onClick={handleMakeChoice} disabled={btnState()} >Make a choice</button>
      <button onClick={removeAll} className=' btn-small' disabled={btnState()} >Remove all</button>
 
      <hr></hr>
