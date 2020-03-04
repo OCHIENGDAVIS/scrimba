@@ -11,6 +11,7 @@ const  Options = (props)=>{
                     return <Option 
                         option={option} 
                         key={key}
+                        removeOne={props.removeOne}
                     />
                 })
             }

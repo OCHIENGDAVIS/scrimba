@@ -15,6 +15,17 @@ class  App extends React.Component {
     }
 
   }
+  componentDidMount(){
+    console.log('component did mount.....')
+  }
+  componentDidUpdate(prevProps, prevState){
+    console.log('component did update here......')
+    console.log(prevProps)
+    console.log(prevState)
+  }
+  componentWillUnmount(){
+    console.log('Component is going away ......')
+  }
   handleAddOption = (option)=>{
     this.setState((prevState)=>{
       return{
@@ -23,7 +34,7 @@ class  App extends React.Component {
     })
   }
   handlePick = ()=>{
-    // alert('Picking what to do')
+    
     let choiceIndex = Math.floor(Math.random()*this.state.options.length)
     alert(this.state.options[choiceIndex])
   }
@@ -34,12 +45,19 @@ class  App extends React.Component {
       }
     })
   }
+  removeOne= (one)=>{
+    this.setState((prevState)=>{
+      return {
+        options : prevState.options.filter((x)=>x!==one)
+      }
+    })
+  }
   render(){
-    console.log(this.state)
+
     return(
       <div>
         <Header title="Indecision App" subtitle="Put your life in the hands of a computer"/>
-        <Options options={this.state.options} />
+        <Options options={this.state.options} removeOne={this.removeOne} />
         <Action pick={this.handlePick}  remove={this.remove} options={this.state.options} />
         <AddOptions add={this.handleAddOption}/>
 
