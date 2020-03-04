@@ -2,15 +2,10 @@ import React, {Component} from 'react'
 
 
 class AddOption extends Component{
-    constructor(props){
-        super(props)
-        this.state = {
-            option : '',
-            error : false
-        }
-            
-        }
-
+    state ={
+        option : '',
+        error : false
+    }
     addOption = ()=>{
         if(this.state.option === ''){
             this.setState(()=>{

@@ -23,8 +23,25 @@ export const canDrink  = (age)=>{
 }
 
 
+class OldSyntaxt{
+    constructor(name){
+        this.name = name
+    }
+}
+
+class Syntax {
+    name = 'brian'
+}
+const old = new OldSyntaxt('James')
+console.log(old)
+
+const newSyntax = new Syntax()
+console.log(newSyntax)
+
+
+
 export default (a, b)=>a-b
 
-
+ 
 
 // export {sayHello, add}

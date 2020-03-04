@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 
 class Visibility extends Component{
-    constructor(props){
-        super(props)
-        this.state = {
-            show : false,
-            btnText : '',
-            text :'Here is some text to show'
-        }
+    state = {
+        show : false,
+        btnText : '',
+        text : 'Here is some text to show'
+
     }
+    screem = ''
     toggle = ()=>{
         this.setState((prevState)=>{
             return{

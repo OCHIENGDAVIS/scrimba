@@ -10,12 +10,8 @@ import  {sayHello, add, isAdult, canDrink} from './components/utils/utils'
 import Sub from './components/utils/utils'
 
 class  App extends React.Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      options : []
-    }
-
+  state = {
+    options : []
   }
   componentDidMount(){
     console.log('component did mount.....')
