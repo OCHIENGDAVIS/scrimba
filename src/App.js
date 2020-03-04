@@ -6,6 +6,8 @@ import AddOptions from './components/AddOpton'
 import Counter from './components/Counter'
 import Visibilty from './components/Visibilty'
 import './App.css'
+import  {sayHello, add, isAdult, canDrink} from './components/utils/utils'
+import Sub from './components/utils/utils'
 
 class  App extends React.Component {
   constructor(props){
@@ -17,6 +19,11 @@ class  App extends React.Component {
   }
   componentDidMount(){
     console.log('component did mount.....')
+    console.log(sayHello() + "Came from the utils.js ")
+    console.log(`Add from utils....=> ${add(12,12)}`)
+    console.log(`Can Drink => ${canDrink(10)}`)
+    console.log(`Is an Adult => ${isAdult(10)}`)
+    console.log(`Sub => ${Sub(10, 10)}`)
   }
   componentDidUpdate(prevProps, prevState){
     console.log('component did update here......')
@@ -60,7 +67,6 @@ class  App extends React.Component {
         <Options options={this.state.options} removeOne={this.removeOne} />
         <Action pick={this.handlePick}  remove={this.remove} options={this.state.options} />
         <AddOptions add={this.handleAddOption}/>
-
         <hr />
         <Counter />
         <Visibilty />
