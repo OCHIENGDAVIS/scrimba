@@ -2,15 +2,10 @@ import React, {Component} from 'react'
 
 
 class AddOption extends Component{
-    constructor(props){
-        super(props)
-        this.state = {
-            option : '',
-            error : false
-        }
-            
-        }
-
+    state ={
+        option : '',
+        error : false
+    }
     addOption = ()=>{
         if(this.state.option === ''){
             this.setState(()=>{
@@ -45,7 +40,7 @@ class AddOption extends Component{
     }
     render(){
         return (
-            <div>
+            <div className="container">
                 
                     <input 
                         type="text" 
@@ -55,8 +50,8 @@ class AddOption extends Component{
                         onChange={this.handleAddOption}
                     />
                     
-                    <button onClick={this.addOption} >Add Option</button> <br />
-                    {this.state.error ? <span className='error'>Option cannot be empty</span> : undefined}
+                    <button onClick={this.addOption} className="btn btn-add">Add Option</button> <br />
+                    {this.state.error ? <span className='error'>*Option cannot be empty*</span> : undefined}
                 
             </div>
         )
