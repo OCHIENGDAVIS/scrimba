@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/scrimba/static/css/main.f2287745.chunk.css",
-    "main.js": "/scrimba/static/js/main.2a9ed33d.chunk.js",
-    "main.js.map": "/scrimba/static/js/main.2a9ed33d.chunk.js.map",
+    "main.css": "/scrimba/static/css/main.511572df.chunk.css",
+    "main.js": "/scrimba/static/js/main.0a202250.chunk.js",
+    "main.js.map": "/scrimba/static/js/main.0a202250.chunk.js.map",
     "runtime-main.js": "/scrimba/static/js/runtime-main.b6011c7a.js",
     "runtime-main.js.map": "/scrimba/static/js/runtime-main.b6011c7a.js.map",
-    "static/js/2.2cb19bc6.chunk.js": "/scrimba/static/js/2.2cb19bc6.chunk.js",
-    "static/js/2.2cb19bc6.chunk.js.map": "/scrimba/static/js/2.2cb19bc6.chunk.js.map",
+    "static/js/2.1f66a28b.chunk.js": "/scrimba/static/js/2.1f66a28b.chunk.js",
+    "static/js/2.1f66a28b.chunk.js.map": "/scrimba/static/js/2.1f66a28b.chunk.js.map",
     "index.html": "/scrimba/index.html",
-    "precache-manifest.758823e07c19d7ab4c0457f45974e46a.js": "/scrimba/precache-manifest.758823e07c19d7ab4c0457f45974e46a.js",
+    "precache-manifest.ce97bd9b905469950e27760349b0143d.js": "/scrimba/precache-manifest.ce97bd9b905469950e27760349b0143d.js",
     "service-worker.js": "/scrimba/service-worker.js",
-    "static/css/main.f2287745.chunk.css.map": "/scrimba/static/css/main.f2287745.chunk.css.map",
-    "static/js/2.2cb19bc6.chunk.js.LICENSE": "/scrimba/static/js/2.2cb19bc6.chunk.js.LICENSE"
+    "static/css/main.511572df.chunk.css.map": "/scrimba/static/css/main.511572df.chunk.css.map",
+    "static/js/2.1f66a28b.chunk.js.LICENSE": "/scrimba/static/js/2.1f66a28b.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.b6011c7a.js",
-    "static/js/2.2cb19bc6.chunk.js",
-    "static/css/main.f2287745.chunk.css",
-    "static/js/main.2a9ed33d.chunk.js"
+    "static/js/2.1f66a28b.chunk.js",
+    "static/css/main.511572df.chunk.css",
+    "static/js/main.0a202250.chunk.js"
   ]
 }
