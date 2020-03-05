@@ -5,6 +5,7 @@
 
 html{
   font-size: 62.5%;
+  color: #fff;
 }
 
 
@@ -100,6 +101,7 @@ ul li{
   margin-bottom: 1.3rem;
   list-style-type: lower-roman;
   font-size: 2.5rem;
+  color: #fff;
 }
 .listItem{
   display: flex;
@@ -147,7 +149,4 @@ input[type]{
 }
 .ReactModal__Body--open > div[data-react-modal-body-trap]{
   background: red;
-}
-.data-react-modal-body-trap{
-  
 }
