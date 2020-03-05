@@ -3,9 +3,13 @@ import React from 'react'
 const Option  = (props)=>{
   
         return(
-            <div>
+            <div className="listItem">
                 <li>{props.option}</li> 
-                <button onClick={(e)=>{props.removeOne(props.option)}}>remove</button> 
+                <button 
+                onClick={(e)=>{props.removeOne(props.option)}}
+                className="btn-link"
+                
+                >remove</button> 
             </div>
             
         )

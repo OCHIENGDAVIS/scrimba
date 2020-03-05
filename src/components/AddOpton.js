@@ -40,7 +40,7 @@ class AddOption extends Component{
     }
     render(){
         return (
-            <div>
+            <div className="container">
                 
                     <input 
                         type="text" 
@@ -50,8 +50,8 @@ class AddOption extends Component{
                         onChange={this.handleAddOption}
                     />
                     
-                    <button onClick={this.addOption} >Add Option</button> <br />
-                    {this.state.error ? <span className='error'>Option cannot be empty</span> : undefined}
+                    <button onClick={this.addOption} className="btn btn-add">Add Option</button> <br />
+                    {this.state.error ? <span className='error'>*Option cannot be empty*</span> : undefined}
                 
             </div>
         )
