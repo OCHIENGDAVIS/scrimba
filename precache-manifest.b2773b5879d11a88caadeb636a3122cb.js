@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9d6530a2d980460cd6312962c68a7a14",
+    "revision": "64714b2ce149bf4a4677f1288fd5a213",
     "url": "/scrimba/index.html"
   },
   {
-    "revision": "28674b0e3bcee4a72c92",
-    "url": "/scrimba/static/css/main.511572df.chunk.css"
+    "revision": "3663550cd9e5536837ae",
+    "url": "/scrimba/static/css/main.66217683.chunk.css"
   },
   {
     "revision": "eec799b500a86f79ccf8",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/scrimba/static/js/2.1f66a28b.chunk.js.LICENSE"
   },
   {
-    "revision": "28674b0e3bcee4a72c92",
+    "revision": "3663550cd9e5536837ae",
     "url": "/scrimba/static/js/main.0a202250.chunk.js"
   },
   {

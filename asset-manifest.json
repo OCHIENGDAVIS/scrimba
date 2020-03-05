@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/scrimba/static/css/main.511572df.chunk.css",
+    "main.css": "/scrimba/static/css/main.66217683.chunk.css",
     "main.js": "/scrimba/static/js/main.0a202250.chunk.js",
     "main.js.map": "/scrimba/static/js/main.0a202250.chunk.js.map",
     "runtime-main.js": "/scrimba/static/js/runtime-main.b6011c7a.js",
@@ -8,15 +8,15 @@
     "static/js/2.1f66a28b.chunk.js": "/scrimba/static/js/2.1f66a28b.chunk.js",
     "static/js/2.1f66a28b.chunk.js.map": "/scrimba/static/js/2.1f66a28b.chunk.js.map",
     "index.html": "/scrimba/index.html",
-    "precache-manifest.ce97bd9b905469950e27760349b0143d.js": "/scrimba/precache-manifest.ce97bd9b905469950e27760349b0143d.js",
+    "precache-manifest.b2773b5879d11a88caadeb636a3122cb.js": "/scrimba/precache-manifest.b2773b5879d11a88caadeb636a3122cb.js",
     "service-worker.js": "/scrimba/service-worker.js",
-    "static/css/main.511572df.chunk.css.map": "/scrimba/static/css/main.511572df.chunk.css.map",
+    "static/css/main.66217683.chunk.css.map": "/scrimba/static/css/main.66217683.chunk.css.map",
     "static/js/2.1f66a28b.chunk.js.LICENSE": "/scrimba/static/js/2.1f66a28b.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.b6011c7a.js",
     "static/js/2.1f66a28b.chunk.js",
-    "static/css/main.511572df.chunk.css",
+    "static/css/main.66217683.chunk.css",
     "static/js/main.0a202250.chunk.js"
   ]
 }
